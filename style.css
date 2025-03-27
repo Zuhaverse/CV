@@ -1,0 +1,165 @@
+body{
+    margin: 20px;
+    font-family: 'Calibri', 'Segoe UI', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px;
+    justify-content: space-between; 
+    align-items: flex-start;
+    align-items: stretch;
+}
+
+.container1, .container2 {
+    background-color: rgba(238,238,239,255);
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    
+    
+}
+
+.container1 {
+    width: 32%;
+    margin-left: 20px;
+}
+
+.container2 {
+    width: 68%;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    margin-right: 20px;
+  
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+
+.content-heading, .content{
+    display: inline-block; 
+    vertical-align: top;
+    color: rgb(92, 91, 91);
+}
+
+.main-heading{
+    font-size: x-large; 
+    border-bottom: 2px solid rgb(152, 152, 152);
+    border-bottom-width: 3px;
+    line-height: 50px;
+
+}
+.content-heading {
+    width: 25%; 
+    font-size: large;
+    
+    font-weight: bold;
+}
+
+.content {
+    width: 70%; 
+    font-size: 17px;
+    
+}
+.hobbies{
+    color: rgb(92, 91, 91);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#pic{
+    border-radius: 50%;
+    max-width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+.my-name, .about-me{
+    text-align: center;
+
+}
+
+.my-name{
+    line-height: 15px;
+}
+#about{
+    text-align: justify;
+    
+}
+
+.content2-heading{
+    color: rgba(50,188,239,255);
+}
+
+.content2{
+    color: rgba(177,179,181,255);
+    line-height: 25px;
+}
+
+.software, .languages, .skills{
+    width: 50%;
+    line-height: 10px;
+}
+
+.wrapper2, .wrapper3{
+    display: flex;
+
+}
+
+#contact-details{
+    color: rgb(92, 91, 91);
+    line-height: 30px;
+}
+
+.progress-bar{
+    padding-top: 20px;
+    width: 50%;
+    line-height: 25px;
+    margin: auto;
+    max-width: 400px;
+}
+.progress {
+    width: 100%;
+    height: 5px;
+    border-radius: 0%;
+    overflow: hidden;
+    appearance: none;
+}
+progress::-webkit-progress-bar {
+    background-color: #c5c4c4; 
+
+}
+
+progress::-webkit-progress-value {
+    background-color: #505050; 
+
+}
+
+
+@media (max-width: 900px) {
+    .content-heading{
+        width: 30%;
+    }
+    .content{
+        width: 60%;
+    }
+    .wrapper {
+        flex-wrap: wrap; 
+    }
+
+    .container1, .container2 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
